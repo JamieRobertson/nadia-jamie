@@ -1,3 +1,3 @@
 # nadia x jamie
 
-[nadiajamie.com](https://nadiajamie.com/){:target="_blank"}  
+<a href="https://nadiajamie.com/" target="_blank">nadiajamie.com</a>  
