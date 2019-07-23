@@ -1,1 +1,3 @@
-# nadia-jamie
+# nadia x jamie
+
+[nadiajamie.com](https://nadiajamie.com/)  
