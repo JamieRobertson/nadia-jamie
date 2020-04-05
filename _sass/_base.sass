@@ -1,0 +1,135 @@
+// Bootstrap v4.3.1 (https://getbootstrap.com/)
+// Copyright 2011-2019 The Bootstrap Authors
+// Copyright 2011-2019 Twitter, Inc.
+// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+@import "./bootstrap-4.3.1/functions"
+@import "./custom_variables"
+@import "./bootstrap-4.3.1/mixins"
+@import "./bootstrap-4.3.1/root"
+@import "./bootstrap-4.3.1/reboot"
+@import "./bootstrap-4.3.1/type"
+@import "./bootstrap-4.3.1/images"
+@import "./bootstrap-4.3.1/code"
+@import "./bootstrap-4.3.1/grid"
+@import "./bootstrap-4.3.1/tables"
+// @import "./bootstrap-4.3.1/forms"
+@import "./bootstrap-4.3.1/buttons"
+@import "./bootstrap-4.3.1/transitions"
+// @import "./bootstrap-4.3.1/dropdown"
+@import "./bootstrap-4.3.1/button-group"
+// @import "./bootstrap-4.3.1/input-group"
+// @import "./bootstrap-4.3.1/custom-forms"
+@import "./bootstrap-4.3.1/nav"
+@import "./bootstrap-4.3.1/navbar"
+@import "./bootstrap-4.3.1/card"
+// @import "./bootstrap-4.3.1/breadcrumb"
+// @import "./bootstrap-4.3.1/pagination"
+// @import "./bootstrap-4.3.1/badge"
+// @import "./bootstrap-4.3.1/jumbotron"
+// @import "./bootstrap-4.3.1/alert"
+// @import "./bootstrap-4.3.1/progress"
+@import "./bootstrap-4.3.1/media"
+@import "./bootstrap-4.3.1/list-group"
+// @import "./bootstrap-4.3.1/close"
+// @import "./bootstrap-4.3.1/toasts"
+// @import "./bootstrap-4.3.1/modal"
+// @import "./bootstrap-4.3.1/tooltip"
+// @import "./bootstrap-4.3.1/popover"
+// @import "./bootstrap-4.3.1/carousel"
+// @import "./bootstrap-4.3.1/spinners"
+@import "./bootstrap-4.3.1/utilities"
+@import "./bootstrap-4.3.1/print"
+
+
+
+// 'Font awesome' icon font family
+@import "./font-awesome-4.6.3/font-awesome"
+
+
+// $mint: #f7f3ec
+$mint: lighten(#a0d3ba, 15%)
+$mint-light: lighten($mint, 1.5%)
+
+$cream: #f0e8da
+
+$pink: #f3ae9a  // #f3ae9a  // f47e5e ?
+$pink-dark: #f7a893
+$pink-light: #e8bfaf
+
+$olive: #4c5725
+$olive-light: #EDF7F4
+$olive-dark: darken($olive, 13%)
+
+
+body
+    color: $olive-dark
+    background-color: $mint
+
+
+// See $headings-font-family / $headings-font-weight
+// h1, .h1, h2, .h2, h3, .h3
+    // font-family: futura-pt, sans-serif
+    // font-weight: 600
+    // font-style: normal
+
+
+.bg-header
+    background-color: $mint
+    background-image: url('/static/img/header-top-bg-mint.png')
+    background-position: left top
+    background-size: auto 100%
+    background-repeat: no-repeat
+
+
+// .display-4
+    // line-height: 1.1
+
+
+.bg-cream
+    background-color: $mint
+
+
+.bg-cream-dark
+    background-color: $cream
+
+
+.bg-pink
+    background-color: $pink-dark
+
+
+// .bg-olive
+//     background-color: $olive-dark
+//     color: $mint
+
+
+.bg-cathedral, .bg-guardswell
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+
+.bg-cathedral
+    @include media-breakpoint-up(md)
+        background-image: url('/static/img/cathedral.jpeg')
+
+
+.bg-guardswell
+    @include media-breakpoint-up(md)
+        background-image: url('/static/img/guardswell.jpg')
+
+
+.text-lg
+    font-size: $font-size-lg
+
+
+.grid-img
+    display: inline-block
+    flex: 0 0 auto 
+    min-height: 0
+    min-width: 0
+    height: auto
+    width: 50%
+    @include media-breakpoint-up(md)
+        width: 25%
+

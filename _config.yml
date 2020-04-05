@@ -9,9 +9,21 @@
 title: ❤️
 email: hello@nadiajamie.com
 description: >  # this means to ignore newlines
-  Nadia and Jamie request the pleasure of your company
+  Nadia and Jamie request the pleasure of your company on the 1st August 2020
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site - was - http://yourdomain.com
+url: "https://nadiajamie.com/" # the base hostname & protocol for your site
+
+static: "/static"
+
+gift_list_url: "https://www.weddingshop.com/Buy/View/70879"
+
+
+# Sass settings
+sass:
+    style: compressed
+    sass_dir: _sass
+    sourcemap: true
+
 
 # Build settings
 markdown: kramdown
