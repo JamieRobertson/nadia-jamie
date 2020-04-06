@@ -10,26 +10,26 @@
 @import "./bootstrap-4.3.1/reboot"
 @import "./bootstrap-4.3.1/type"
 @import "./bootstrap-4.3.1/images"
-@import "./bootstrap-4.3.1/code"
+// @import "./bootstrap-4.3.1/code"
 @import "./bootstrap-4.3.1/grid"
-@import "./bootstrap-4.3.1/tables"
+// @import "./bootstrap-4.3.1/tables"
 // @import "./bootstrap-4.3.1/forms"
-@import "./bootstrap-4.3.1/buttons"
+// @import "./bootstrap-4.3.1/buttons"
 @import "./bootstrap-4.3.1/transitions"
 // @import "./bootstrap-4.3.1/dropdown"
-@import "./bootstrap-4.3.1/button-group"
+// @import "./bootstrap-4.3.1/button-group"
 // @import "./bootstrap-4.3.1/input-group"
 // @import "./bootstrap-4.3.1/custom-forms"
-@import "./bootstrap-4.3.1/nav"
-@import "./bootstrap-4.3.1/navbar"
-@import "./bootstrap-4.3.1/card"
+// @import "./bootstrap-4.3.1/nav"
+// @import "./bootstrap-4.3.1/navbar"
+// @import "./bootstrap-4.3.1/card"
 // @import "./bootstrap-4.3.1/breadcrumb"
 // @import "./bootstrap-4.3.1/pagination"
 // @import "./bootstrap-4.3.1/badge"
 // @import "./bootstrap-4.3.1/jumbotron"
 // @import "./bootstrap-4.3.1/alert"
 // @import "./bootstrap-4.3.1/progress"
-@import "./bootstrap-4.3.1/media"
+// @import "./bootstrap-4.3.1/media"
 @import "./bootstrap-4.3.1/list-group"
 // @import "./bootstrap-4.3.1/close"
 // @import "./bootstrap-4.3.1/toasts"
@@ -131,4 +131,14 @@ body
     width: 50%
     @include media-breakpoint-up(md)
         width: 25%
+
+
+// fade image in after load
+.lazyload, .lazyloading
+    opacity: 0
+
+
+.lazyloaded
+    opacity: 1
+    transition: opacity 0.3s
 
