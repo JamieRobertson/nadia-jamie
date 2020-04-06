@@ -103,9 +103,10 @@ body
 
 
 .bg-cathedral, .bg-guardswell
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: center
+    @include media-breakpoint-up(md)
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
 
 
 .bg-cathedral
