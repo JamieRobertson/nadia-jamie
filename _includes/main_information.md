@@ -1,6 +1,6 @@
 ## Jamie & Nadia are getting married
 
-<small>1ST AUGUST 2020</small>
+<small>9TH SEPTEMBER 2021</small>
 
 ---
 
