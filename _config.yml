@@ -13,10 +13,13 @@ description: >  # this means to ignore newlines
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://nadiajamie.com/" # the base hostname & protocol for your site
 
-static: "/static"
+cairdhall_url: "https://www.standrewsbrewingcompany.com/venues/dundee-caird-hall"
+
+survey_url: "https://docs.google.com/forms/d/e/1FAIpQLSfOtSyQG3EKyX2Zwhfrn5RFtRA73fD-m2z8SBvI1U0rRh56ug/viewform"
 
 gift_list_url: "https://www.weddingshop.com/Buy/View/70879"
 
+static: "/static"
 
 # Sass settings
 sass:
