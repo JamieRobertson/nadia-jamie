@@ -27,7 +27,7 @@
 // @import "./bootstrap-4.3.1/pagination"
 // @import "./bootstrap-4.3.1/badge"
 // @import "./bootstrap-4.3.1/jumbotron"
-// @import "./bootstrap-4.3.1/alert"
+@import "./bootstrap-4.3.1/alert"
 // @import "./bootstrap-4.3.1/progress"
 // @import "./bootstrap-4.3.1/media"
 @import "./bootstrap-4.3.1/list-group"
@@ -80,6 +80,15 @@ body
     background-position: left top
     background-size: auto 100%
     background-repeat: no-repeat
+    // @include media-breakpoint-up(md)
+    //     background-position: left 60px
+
+.sticky-header
+    @include media-breakpoint-up(md)
+        position: fixed
+        width: 100%
+        height: 60px
+        z-index: $zindex-fixed
 
 
 // .display-4
@@ -90,6 +99,12 @@ body
     background: -moz-linear-gradient(180deg, $mint 5%, $olive-grass 100%)
     background: -webkit-linear-gradient(180deg, $mint 5%, $olive-grass 100%)
     background: linear-gradient(180deg, $mint 5%, $olive-grass 100%)
+
+
+.bg-white-olive-gradient
+    background: -moz-linear-gradient(180deg, white 50%, $olive-grass 100%)
+    background: -webkit-linear-gradient(180deg, white 50%, $olive-grass 100%)
+    background: linear-gradient(180deg, white 50%, $olive-grass 100%)
 
 
 .bg-cream
@@ -104,9 +119,9 @@ body
     background-color: $pink-dark
 
 
-// .bg-olive
-//     background-color: $olive-dark
-//     color: $mint
+.bg-olive
+    background-color: $olive-grass
+    color: lighten($mint, 5%)
 
 
 .bg-cathedral, .bg-guardswell
@@ -149,6 +164,7 @@ body
     opacity: 1
     transition: opacity 0.3s
 
+
 .text-amendment
     display: inline-block
     background-image: url('/static/img/amendment.png')
@@ -161,3 +177,12 @@ body
         vertical-align: top
         display: inline-block
         transform: rotate(-10deg)
+
+
+.anchor-link
+    margin-top: -160px
+    margin-bottom: 160px
+    //::after
+    // content: ""
+    // display: block
+

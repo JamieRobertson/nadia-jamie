@@ -1,26 +1,31 @@
 ---
 layout: default
-body_class: bg-cream
 title: "Nadia and Jamie are getting married!"
 ---
 
-<div class="bg-header">
+<a href="{{ site.survey_url }}" target="_blank" class="sticky-header d-block text-decoration-none">
+    <div class="alert alert-warning text-center rounded-0 mb-0 p-0">
+        <div class="container-fluid py-15">
+            <p class="m-0 d-inline">Please help us by providing some important information! &rarr;</p>
+        </div>
+    </div>
+</a>
+
+<div class="bg-header py-40 pb-md-80">
     <section class="container">
-        <div class="row pt-100 pb-120 pb-md-0">
+        <div class="row py-120 pb-md-60">
             <div class="col-12 col-md-10 col-lg-7">
                 <h1 class="display-3 mb-20">Nadia and Jamie are getting married!</h1>
                 <p class="font-weight-bold">
                     <span class="text-uppercase h4 d-block mb-40">Thursday 9<span class="text-lowercase">th</span> September 2021</span> 
                 </p>
-                <p class="font-weight-bold">We need some info from you! Click below</p>
-                <a href="{{ site.survey_url }}" target="_blank" class="btn btn-dark rounded-pill text-uppercase px-20 mb-40">Fill me in &rarr;</a>
             </div>
         </div>
     </section>
 </div>
 
 <section class="bg-olive-gradient">
-    <section class="container pt-sm-40 pt-md-80 pb-sm-40 pt-40 pb-md-40">
+    <section class="container pb-sm-40 pb-md-120">
 
         <div class="row pt-40 bg-white">
             <div class="col-md-12 col-lg-7 px-md-30 pb-30 pb-lg-40">
@@ -44,18 +49,15 @@ title: "Nadia and Jamie are getting married!"
                 </p>
             </div>
             <div class="col-md-12 col-lg-5 px-0 d-lg-flex align-self-lg-stretch align-items-lg-end">
-                <div class="mb-xl-15 mr-xl-15">
-                    <img src="/static/img/dundee-cathedral-outside.jpg" class="d-block w-100 h-auto">
+                <div class="mb-xl-15 mr-xl-15 ml-md-auto">
+                    <img src="/static/img/dundee-cathedral-outside.jpg" class="d-block w-100 h-auto" style="max-width: 380px;">
                 </div>
             </div>
         </div>
 
-        <div class="row bg-white pt-40 mt-40 mt-md-80">
+        <div class="row bg-white pt-40 mt-40 mt-md-100">
             <div class="col-12 px-md-30">
                 <h2 class="h1">The Celebration</h2>
-                <p class="text-uppercase font-weight-bold small">
-                    Arrival at 12:45pm for 1pm start
-                </p>
                 <p class="text-lg">
                     The celebration will be at <a href="https://www.instagram.com/guardswellfarm/" target="_blank">Guardswell Farm</a> &ndash; <br class="d-none d-lg-block"> a 150 acre grassland farm, with panoramic views across Perthshire.
                 </p>
@@ -69,12 +71,11 @@ title: "Nadia and Jamie are getting married!"
                     <a href="{% link directions.html %}" target="_blank">Directions can be found here</a>.
                 </p>
                 <p>
-                    <a href="{{ site.survey_url }}" target="_blank">Let us know</a> if you require transport between the venue and the reception.
-                    Please also let us know if you are driving and will have room in your car to give other guests a lift.
+                    For those that require it, we have arranged transport between Dundee and Guardswell Farm following the ceremony. If you are driving and have room in your car, we would appreciate if you could offer a lift to other guests.
                 </p>
                 <p>
                     The party ends at midnight. Transport will be provided again for those that need to get back to Dundee. 
-                    There are also local taxis for those staying elsewhere. 
+                    There are also <a href="#local-taxis">local taxis</a> for those staying elsewhere.
                 </p>
                 <p class="font-italic small">
                     Guardswell Farm, <br>
@@ -91,87 +92,107 @@ title: "Nadia and Jamie are getting married!"
             </div>
         </div>
     </section>
-
-    <section class="container pt-sm-40 pt-md-80 pb-sm-40 pt-40 pb-md-120">
-        <div class="row align-items-center bg-white">
-            <div class="col-md-12 col-lg-7 py-30 p-md-30 pb-lg-40 pt-lg-15">
-                <h4>Dress code</h4>
-                <p>
-                    Scottish summer wedding, with suits or kilts for the men. Wear whatever makes you feel happy and comfortable. 
-                </p>
-
-                <h4>Scran</h4>
-                <p>
-                    The meal will be Scottish cuisine using locally sourced produce, catered by the fantastic <a href="https://www.instagram.com/kitchen_east/" target="_blank">Kitchen East</a>. 
-                </p>
-
-                <p>
-                    There will be a vegetarian or a meaty option, so please <a href="{{ site.survey_url }}" target="_blank">let us know using ths form</a> which one you prefer. 
-                    <span class="font-weight-bold">If you have any specific allergies or dietary requirements that we should be aware of please also let us know using <a href="{{ site.survey_url }}" target="_blank">the same form</a>.</span>
-                </p>
-            </div>
-            <div class="col-md-12 col-lg-5 px-0 d-lg-flex align-self-lg-stretch">
-                <div class="d-block d-md-none overflow-hidden" style="height: 320px;">
-                    <img src="/static/img/guardswell-4.png" class="d-block w-100 h-auto">
-                </div>
-                <div class="d-none d-md-block">
-                    <img src="/static/img/guardswell-4.png" class="d-block w-100 h-auto">
-                </div>
-            </div>
-        </div>
-    </section>
 </section>
 
 
-<div class="bg-white">
-    <section class="container">
-        <div class="row py-120">
-            <div class="col-12">
-                <h3>Planes, Trains and Automobiles</h3>
-                <p class="font-italic">How to get to Guardswell Farm</p>
+<section class="container">
+    <div class="row align-items-center py-120">
+        <div class="col-md-12 col-lg-7">
+            <h4>Dress code</h4>
+            <p>
+                Scottish summer wedding, with suits or kilts for the men. Wear whatever makes you feel happy and comfortable. 
+            </p>
 
-                <br>
+            <h4>Scran</h4>
+            <p>
+                The meal will be Scottish cuisine using locally sourced produce, catered by the fantastic <a href="https://www.instagram.com/kitchen_east/" target="_blank">Kitchen East</a>. 
+            </p>
 
-                <h4>Nearest airports</h4>
-                <p>
-                    <b>Dundee airport</b>: <br>
-                    Fly direct from London City Airport on Loganair.
-                </p>
-
-                <p>
-                    <b>Glasgow airport</b>: <br>
-                    Fly direct from London Stansted, Gatwick or Heathrow. 
-                    <br>
-                    <em>Distance by car from Glasgow airport to Dundee: 150km (approx 1 hr 40 mins)</em>
-                </p>
-
-                <p>
-                    <b>Edinburgh airport</b>: <br>
-                    Best option for guests from Sweden, Served by Norwegian &amp; SAS. Many flight options from London &amp; other international destinations.
-                    <br>
-                    <em>Distance by car from Edinburgh airport to Dundee: 98km (approx 1 hr 10 mins)</em>
-                </p>
-
-                <h4>Trains &amp; buses</h4>
-                <p>
-                    There are trains to Dundee and Perth from London King’s Cross.
-                    <br>
-                    There are regular train and bus services to Perth and Dundee from both Edinburgh and Glasgow.
-                </p>
+            <p>
+                Please fill in your dietary requirements <a href="{{ site.survey_url }}" target="_blank">on this form</a>.
+            </p>
+        </div>
+        <div class="col-md-12 col-lg-5 d-lg-flex align-self-lg-stretch">
+            <div class="d-block d-lg-none overflow-hidden" style="height: 320px;">
+                <img src="/static/img/guardswell-4.png" class="d-block w-100 h-auto">
+            </div>
+            <div class="d-none d-lg-block ml-auto">
+                <img src="/static/img/guardswell-4.png" style="max-width: 400px;" class="d-block w-100 h-auto">
             </div>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
+
+<div class="bg-olive p-5"></div>
+
+<section class="container">
+    <div class="row py-120">
+        <div class="col-12">
+            <h3>Planes, Trains and Automobiles</h3>
+            <p class="font-italic">How to get to Guardswell Farm</p>
+
+            <br>
+
+            <h4>Nearest airports</h4>
+            <p>
+                <b>Dundee airport</b>: <br>
+                Fly direct from London City Airport on Loganair.
+            </p>
+            <p>
+                <b>Glasgow airport</b>: <br>
+                Fly direct from London Stansted, Gatwick or Heathrow. 
+                <br>
+                <em>Distance by car from Glasgow airport to Dundee: 150km (approx 1 hr 40 mins)</em>
+            </p>
+            <p>
+                <b>Edinburgh airport</b>: <br>
+                Best option for guests from Sweden, Served by Norwegian &amp; SAS. Many flight options from London &amp; other international destinations.
+                <br>
+                <em>Distance by car from Edinburgh airport to Dundee: 98km (approx 1 hr 10 mins)</em>
+            </p>
+
+            <br>
+
+            <h4>Trains &amp; buses</h4>
+            <p>
+                There are trains to Dundee and Perth from London King’s Cross.
+                <br>
+                There are regular train and bus services to Perth and Dundee from both Edinburgh and Glasgow.
+            </p>
+
+            <br>
+
+            <div id="local-taxis" class="anchor-link"></div>
+
+            <h4>Local taxis</h4>
+            <p>Taxis recommended by Guardswell Farm:</p>
+            <ul>
+                <li>Errol Taxi: 07534300285 / 01821670345</li>
+                <li>Carse Shuttle: 01828686666</li>
+                <li>Inchture Travel: 07814626300</li>
+                <li>Perth Private Hire: 01738592468</li>
+                <li>Perth Radio Taxis: 07879331126</li>
+                <li>Thistle Taxis Perth: 01738441122</li>
+                <li>A&B Taxis Perth: 01738622221</li>
+                <li>Tay Taxis Dundee: 01382450450</li>
+                <li>Dundee Taxis: 01382500555</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<div class="bg-olive p-5"></div>
 
 
 <section class="container">
     <div class="row py-120">
         <div class="col-12 col-md-8">
             <h3>Accommodation</h3>
-            <p>
+            <p class="font-italic">
                 We recommend staying in Dundee, Perth or in an AirBnB in the surrounding area. 
-                <!-- We will advise on transport options nearer to the wedding date. <br> --> <br>
-                <em>Please mention Guardswell Farm when booking the options below.</em>
+                <br>Please mention Guardswell Farm when booking the options below.
             </p>
 
             <br>
@@ -248,7 +269,10 @@ title: "Nadia and Jamie are getting married!"
 </section>
 
 
-<div class="bg-white">
+<div class="bg-olive p-5"></div>
+
+
+<div class="bg-white-olive-gradient">
     <section class="container">
         <div class="row py-120">
             <div class="col-12 col-md-8">
@@ -261,6 +285,8 @@ title: "Nadia and Jamie are getting married!"
                 </p>
                 <div class="py-30"></div>
 
+                
+                <!--
                 <h3>Gift List</h3>
                 <p>
                     We don't expect a wedding gift but if you would like to give us something, we have made a gift list where you can also make a contribution to our honeymoon or make a donation to selected charities. 
@@ -269,21 +295,21 @@ title: "Nadia and Jamie are getting married!"
                     <a href="{{ site.gift_list_url }}" target="_blank">See our gift list here &rarr;</a>
                 </p>
                 <div class="py-30"></div>
+                -->
 
                 <h3>Day after drinks</h3>
                 <p>
                     Let's continue the party! Join us the day after from 12:30 at <a href="{{site.cairdhall_url}}">Caird Hall</a> for a Bloody Mary or two. 
                 </p>
-
-                <!-- <h3>Other Information</h3> -->
-                <!-- <p>Due to venue capacity restrictions, unfortunately we cannot welcome young guests, except newborns. We hope you understand.</p> -->
             </div>
         </div>
     </section>
 
-    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1H7qaB5AxBsagY4TTHvt8XX5JfBfM6jUN" class="w-100 d-block border-0" loading="lazy" allowfullscreen height="480"></iframe>
-
+    <div class="container">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1H7qaB5AxBsagY4TTHvt8XX5JfBfM6jUN" class="w-100 d-block border-0" loading="lazy" allowfullscreen height="480"></iframe>
+    </div>
 </div>
+
 
 <div class="py-0 py-md-80">
     <section class="container">
@@ -309,20 +335,20 @@ title: "Nadia and Jamie are getting married!"
     <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_02.jpg" class="lazyload grid-img">
     <noscript><img src="/static/img/nadia_jamie_02.jpg" class="grid-img"></noscript>
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_03.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_03.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_03.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_03.jpg" class="grid-img"></noscript> -->
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_04.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_04.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_04.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_04.jpg" class="grid-img"></noscript> -->
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_05.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_05.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_05.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_05.jpg" class="grid-img"></noscript> -->
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_06.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_06.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_06.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_06.jpg" class="grid-img"></noscript> -->
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_07.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_07.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_07.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_07.jpg" class="grid-img"></noscript> -->
 
     <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_08.jpg" class="lazyload grid-img">
     <noscript><img src="/static/img/nadia_jamie_08.jpg" class="grid-img"></noscript>
@@ -330,12 +356,12 @@ title: "Nadia and Jamie are getting married!"
     <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_09.jpg" class="lazyload grid-img">
     <noscript><img src="/static/img/nadia_jamie_09.jpg" class="grid-img"></noscript>
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_10.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_10.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_10.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_10.jpg" class="grid-img"></noscript> -->
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_11.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_11.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_11.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_11.jpg" class="grid-img"></noscript> -->
 
-    <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_12.jpg" class="lazyload grid-img">
-    <noscript><img src="/static/img/nadia_jamie_12.jpg" class="grid-img"></noscript>
+    <!-- <img src="/static/img/placeholder.png" data-src="/static/img/nadia_jamie_12.jpg" class="lazyload grid-img"> -->
+    <!-- <noscript><img src="/static/img/nadia_jamie_12.jpg" class="grid-img"></noscript> -->
 </div>
